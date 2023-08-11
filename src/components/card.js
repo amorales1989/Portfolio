@@ -1,9 +1,6 @@
 import React from "react";
 
-function Card({ title, description, image }) {
-  const linkedinLink =
-    "https://www.linkedin.com/posts/alejandro-morales-42b47123b_proyecto-it-market-activity-7001338948467757056-c6S_?utm_source=share&utm_medium=member_desktop";
-
+function Card({ title, description, image, link }) {
   return (
     <div id="proyectos" className="row card-section">
       <div
@@ -12,15 +9,22 @@ function Card({ title, description, image }) {
           backgroundColor: "#0d073f",
           color: "#fff",
           paddingLeft: "0px",
+          height: "210px",
         }}
       >
         <div className="row g-0">
           <div className="col-md-4" style={{ position: "relative" }}>
-            <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-link"
+            >
               <img
                 className="img-fluid"
                 src={image}
                 alt="Imagen del proyecto"
+                style={{ height: "209px" }}
               />
               <div
                 style={{
