@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { Fade } from "react-bootstrap";
 import Title from "./titleAnimation";
+import foto from '../assets/fotoperfilalemorales.jpeg'
 
 const ProfileCard = () => {
   const [showText, setShowText] = useState(false);
@@ -77,7 +78,7 @@ const ProfileCard = () => {
           >
             <Card.Img
               variant="top"
-              src="https://drive.google.com/uc?export=view&id=17R6aQrtHoY6QgDiahknIjOe2lqGE1Uku"
+              src={foto}
               alt="Foto de perfil"
               style={imageStyle}
               onLoad={handleImageLoad} // Evento onLoad para marcar la imagen como cargada
